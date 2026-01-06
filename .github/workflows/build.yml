@@ -16,7 +16,7 @@ jobs:
          vulkan-use-cache: true
 
       - name: Upload Vulkan SDK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: vulkan-sdk
           path: D:/a/sdkdownloader/sdkdownloader/VULKAN_SDK
