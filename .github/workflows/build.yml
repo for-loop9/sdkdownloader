@@ -8,12 +8,11 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Prepare Vulkan SDK
-        uses: humbletim/setup-vulkan-sdk@v1.2.1
+      - name: Install Vulkan SDK
+        uses: humbletim/install-vulkan-sdk@v1.2
         with:
-         vulkan-query-version: latest
-         vulkan-components: Vulkan-Loader
-         vulkan-use-cache: true
+         version: 1.4.335.0
+         cache: true
 
       - name: Upload Vulkan SDK
         uses: actions/upload-artifact@v4
