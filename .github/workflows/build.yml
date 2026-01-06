@@ -14,3 +14,9 @@ jobs:
          vulkan-query-version: latest
          vulkan-components: Vulkan-Loader
          vulkan-use-cache: true
+
+      - name: Upload Vulkan SDK
+        uses: actions/upload-artifact@v3
+        with:
+          name: vulkan-sdk
+          path: D:/a/sdkdownloader/sdkdownloader/VULKAN_SDK
